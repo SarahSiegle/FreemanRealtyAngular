@@ -39,4 +39,34 @@ describe('my app', function() {
     });
 
   });
+    
+
+  describe('viewSearch', function() {
+
+    beforeEach(function() {
+      browser.get('index.html#/viewSearch');
+    });
+
+
+    it('should render viewSearch when user navigates to /viewSearch', function() {
+      expect(element.all(by.css('[ng-view] p')).first().getText()).
+        toMatch(/partial for viewSearch/);
+    });
+
+  });
+    
+
+  describe('viewContact', function() {
+
+    beforeEach(function() {
+      browser.get('index.html#/viewContact');
+    });
+
+
+    it('should render viewAbout when user navigates to /viewContact', function() {
+      expect(element.all(by.css('[ng-view] p')).first().getText()).
+        toMatch(/partial for viewContact/);
+    });
+
+  });
 });
