@@ -5,66 +5,38 @@
 describe('my app', function() {
 
 
-  it('should automatically redirect to /viewHomepage when location hash/fragment is empty', function() {
+  it('should automatically redirect to /view1 when location hash/fragment is empty', function() {
     browser.get('index.html');
-    expect(browser.getLocationAbsUrl()).toMatch("/viewHomepage");
+    expect(browser.getLocationAbsUrl()).toMatch("/view1");
   });
 
 
-  describe('viewHomepage', function() {
+  describe('view1', function() {
 
     beforeEach(function() {
-      browser.get('index.html#/viewHomepage');
+      browser.get('index.html#/view1');
     });
 
 
-    it('should render viewHomepage when user navigates to /viewHomepage', function() {
+    it('should render view1 when user navigates to /view1', function() {
       expect(element.all(by.css('[ng-view] p')).first().getText()).
-        toMatch(/partial for ViewHomepage/);
+        toMatch(/partial for View 1/);
     });
 
   });
 
-  describe('viewAbout', function() {
+
+  describe('view2', function() {
 
     beforeEach(function() {
-      browser.get('index.html#/viewAbout');
+      browser.get('index.html#/view2');
     });
 
 
-    it('should render viewAbout when user navigates to /viewAbout', function() {
+    it('should render view2 when user navigates to /view2', function() {
       expect(element.all(by.css('[ng-view] p')).first().getText()).
-        toMatch(/partial for viewAbout/);
+        toMatch(/partial for view 2/);
     });
 
   });
-    
-  describe('viewSearch', function() {
-
-    beforeEach(function() {
-      browser.get('index.html#/viewSearch');
-    });
-
-
-    it('should render viewSearch when user navigates to /viewSearch', function() {
-      expect(element.all(by.css('[ng-view] p')).first().getText()).
-        toMatch(/partial for ViewSearch/);
-    });
-
-  });
-    
-  describe('viewContact', function() {
-
-    beforeEach(function() {
-      browser.get('index.html#/viewContact');
-    });
-
-
-    it('should render viewContact when user navigates to /viewContact', function() {
-      expect(element.all(by.css('[ng-view] p')).first().getText()).
-        toMatch(/partial for ViewContact/);
-    });
-
-  });    
-    
 });
