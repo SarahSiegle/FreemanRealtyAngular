@@ -1,15 +1,15 @@
 'use strict';
 
-describe('myApp.view1 module', function() {
+describe('myApp.viewHomepage module', function() {
 
-  beforeEach(module('myApp.view1'));
+  beforeEach(module('myApp.viewHomepage'));
 
-  describe('view1 controller', function(){
+  describe('viewHomepage controller', function(){
 
     it('should ....', inject(function($controller) {
       //spec body
-      var view1Ctrl = $controller('View1Ctrl');
-      expect(view1Ctrl).toBeDefined();
+      var viewHomepageCtrl = $controller('ViewHomepageCtrl');
+      expect(viewHomepageCtrl).toBeDefined();
     }));
 
   });
