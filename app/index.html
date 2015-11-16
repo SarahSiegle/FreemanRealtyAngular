@@ -6,30 +6,152 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Sarah's AngularJS App</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <title>Freeman Realty Angular</title>
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/business-casual.css" rel="stylesheet">
+  <!-- Custom CSS to overwrite Bootstrap Core and business-casual-->
+  <link href="css/custom.css" rel="stylesheet">
+  
+  <!-- This will get rid of errors in the Developer Tools related to favicon.ico (bookmark icons) -->
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    
+    
+  <!--<link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
-  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="app.css"> -->
+    
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
+
+
+
+
 <body>
+    
+    
+ <!--   
   <ul class="menu">
     <li><a href="#/viewHomepage">Home</a></li>
     <li><a href="#/viewAbout">About</a></li>
     <li><a href="#/viewSearch">Search</a></li>
     <li><a href="#/viewContact">Contact</a></li>
   </ul>
+  -->
+    
+    <div class="brand">Freeman Realty</div>
+    <div class="address-bar">904 South Erie Highway | Hamilton, OH 45011 | 513.868.1122</div>
 
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html">Business Casual</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#/viewHomepage">Home</a>
+                    </li>
+                    <li>
+                        <a href="#/viewAbout">About</a>
+                    </li>
+                    <li>
+                        <a href="#/viewSearch">Property Search</a>
+                    </li>
+                    <li>
+                        <a href="#/viewContact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+  <![endif]--> 
 
+    
+  <!-- ngView is a directive that complements the $route service by including the rendered template of the current route into the main layout (index.html) file. Every time the           current route changes, the included view changes with it according to the configuration of the $route service.
+        Requires the ngRoute module to be installed. -->
   <div ng-view></div>
 
-  <div>Angular seed app: v<span app-version></span></div>
+  
+    <!--<div>Angular seed app: v<span app-version></span></div>-->
 
+    
+    
+    
+    
+    
+    
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+			<div class="boxFooter">
+			    <div class="col-sm-2 text-center">
+                    <img class="img-responsive" src="img/RealtorLogoSmall.gif" alt="">
+                </div>
+                <div class="col-sm-8 text-center">
+                    <p>Copyright &copy; freemanrealtyhomes.com 2014</p>
+                </div>
+				<div class="col-sm-2 text-center">
+                    <img class="img-responsive" src="img/EqualHousingOpportunityLogo2.gif" alt="">
+                </div>
+		    </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>    
+    
+    
+    
+    
+    
+    
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->

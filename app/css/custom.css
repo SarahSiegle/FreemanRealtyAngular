@@ -1,0 +1,11 @@
+.boxFooter {
+    margin-bottom: 20px;
+    padding: 30px 15px;
+    background: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+footer p {
+    margin: 0;
+    padding: 0px 0;
+}
