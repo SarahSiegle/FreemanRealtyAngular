@@ -9,3 +9,14 @@ footer p {
     margin: 0;
     padding: 0px 0;
 }
+
+
+.testStuffForm {
+    background: white;
+    padding: 50px;
+    margin: 50px;
+}
+
+.ulRadioButton { 
+    list-style-type: none; 
+}

@@ -1,0 +1,86 @@
+<div class="container, testStuffForm">
+    
+<div class="row">
+  <div class="col-md-10"><h1>Edit/Create Model</h1></div>
+  <div class="col-md-2">* Indicates required field</div>
+</div>    
+    
+
+<form class="col-md-12, form-inline" role="form">  
+  <div class="row">    
+      <div class="form-group">
+        <label for="modelName">Model Name *</label>
+        <input type="text" class="form-control" id="modelName">
+      </div>
+      
+      <div class="form-group">
+        <a href="url">Copy Existing Model</a>
+      </div>
+      
+      <div class="form-group">
+        <a href="url">Match Account</a>
+      </div>
+      
+      <div class="form-group">
+        <label for="createdFor">Created For</label>
+        <select class="form-control" id="createdFor">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+      </div>
+  </div>
+    
+  <div class="row">
+        <div class="form-group">
+        <label for="description">Description</label>
+        <input type="text" class="form-control" id="description">
+        </div>  
+      
+        <div class="form-group">
+        <label for="access">Access</label>
+        <input type="radio" class="form-control" id="access" name="public" value="public">Public
+        <input type="radio" class="form-control" id="access" name="private" value="private">Private
+        </div>  
+      
+  </div>
+    
+    
+    
+  <div class="row"> 
+    <div class="form-group">
+      <label for="modelType">Model Type</label>
+      <ul class="ulRadioButton">
+        <li><input type="radio" class="form-control" id="modelType" name="individual" value="individual">Individual (Securities Only)</li>
+        <li><input type="radio" class="form-control" id="modelType" name="composite" value="composite">Composite (May contain models and securities)</li>
+      </ul>
+    </div>    
+
+    <div class="form-group">
+      <label for="setTargetBy">Set Target By</label>
+      <ul class="ulRadioButton">
+        <li><input type="radio" class="form-control" id="setTargetBy" name="percentOfModel" value="percentOfModel">% of Model</li>
+        <li><input type="radio" class="form-control" id="setTargetBy" name="shareQuality" value="shareQuality">Share Quality</li>
+        </ul>    
+    </div>    
+ 
+    <div class="form-group">
+      <label for="tolerance">Tolerance</label>
+      <ul class="ulRadioButton">
+        <li><input type="radio" class="form-control" id="percentOfModelTolerance" name="percentOfModelTolerance" value="percentOfModelTolerance">% of Model</li>
+      <li><input type="radio" class="form-control" id="tolerance" name="dollarAmount" value="dollarAmount">Dollar Amount</li>
+        </ul>
+    </div>    
+  </div>
+        
+  <div class="row"> 
+      <button type="submit" class="btn btn-default">Save And Assign</button>
+      <button type="submit" class="btn btn-default">Save Model</button>
+  </div>
+</form>
+
+    
+    
+</div>
+    

@@ -6,9 +6,13 @@ angular.module('myApp', [
   'myApp.viewHomepage',
   'myApp.viewAbout',
   'myApp.viewSearch',
-  'myApp.viewContact',    
+  'myApp.viewContact', 
+  'myApp.viewTestStuff',
   'myApp.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/viewHomepage'});
+  $routeProvider
+      
+      .otherwise({redirectTo: '/viewHomepage'});
 }]);
+
