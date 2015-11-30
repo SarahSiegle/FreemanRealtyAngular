@@ -1,10 +1,11 @@
 <div class="container, testStuffForm">
     
 <div class="row">
-  <div class="col-md-10"><h1>Edit/Create Model</h1></div>
+  <div class="col-md-10"><h2>Edit/Create Model</h2></div>
   <div class="col-md-2">* Indicates required field</div>
 </div>    
     
+    </br>
 
 <form class="col-md-12, form-inline" role="form">  
   <div class="row">    
@@ -23,12 +24,18 @@
       
       <div class="form-group">
         <label for="createdFor">Created For</label>
-        <select class="form-control" id="createdFor">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="mercedes">Mercedes</option>
-          <option value="audi">Audi</option>
-        </select>
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Dropdown
+                    <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+   
+  </ul>
+</div>
       </div>
   </div>
     
@@ -74,9 +81,53 @@
     </div>    
   </div>
         
+    <div class="row">
+  <div class="table-responsive">
+   <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Security/Model</th>
+        <th>Description</th>
+        <th>Target %</th>
+        <th>Min %</th>
+        <th>Max %</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>        
+            <select class="form-control" id="createdFor">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+            </select>
+          </td>
+        <td><input type="search" name="lookupModel"><button type="submit" class="btn btn-default">Lookup</button></td>
+        <td></td>
+          <td><input type="number" name="targetPercent" min="1" max="100"></td>
+          <td><input type="number" name="minPercent" min="1" max="100"></td>
+          <td><input type="number" name="maxPercent" min="1" max="100"></td>
+          <td><a href="url">Remove</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+    </div>
+    
+    
   <div class="row"> 
-      <button type="submit" class="btn btn-default">Save And Assign</button>
-      <button type="submit" class="btn btn-default">Save Model</button>
+      <div class="col-md-8">
+      </div>
+      <div class="col-md-4">
+          <div class="pull-right">
+      <a href="url">Reset</a>
+      <button type="submit" class="btn btn btn-primary">Save And Assign</button>
+      <button type="submit" class="btn btn btn-primary">Save Model</button>
+              </div>
+      </div>
   </div>
 </form>
 
